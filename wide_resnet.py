@@ -1,5 +1,3 @@
-# This code is imported from the following project: https://github.com/asmith26/wide_resnets_keras
-
 import logging
 import sys
 import numpy as np
@@ -32,7 +30,7 @@ class WideResNet:
             self._channel_axis = -1
             self._input_shape = (image_size, image_size, 3)
 
-    # Wide residual network http://arxiv.org/abs/1605.07146
+    
     def _wide_basic(self, n_input_plane, n_output_plane, stride):
         def f(net):
             # format of conv_params:
